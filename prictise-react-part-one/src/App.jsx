@@ -25,6 +25,11 @@ function App() {
   return (
     <>
       <h1>React Pricktise Conceaps</h1>
+      {
+        phone.map((phone) =>(
+           <Phone key={phone.id} phone={phone}></Phone>))
+      }
+
       {/* <Steat></Steat> */}
       <Book
         name1="Math"
@@ -41,7 +46,7 @@ function App() {
       <Book name1="React" name2="Node.js" name3="MongoBD" name4="SQL"></Book>
 
       {list.map((person) => (
-        <Applicitons key={person.id} person={person}></Applicitons>
+        <Applicitons  person={person}></Applicitons>
       ))}
 
       {myArr.map((find) => (
@@ -53,13 +58,7 @@ function App() {
       <Reandering name="Node-JS" areYouHeangry={false}></Reandering>
       <Reandering name="Next-JS" areYouHeangry={true}></Reandering>
 
-      {/* {
-        phone.map(f => {
-          const stor = f.price>10000;
-          <Phone key={f.id} phone={stor}></Phone>
-        })
-      } */}
-
+      
     </>
   );
 }
