@@ -1,0 +1,17 @@
+.broder{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* display: flex;
+    flex-wrap: wrap; */
+    border: 2px solid red;
+    gap: 20px;
+}
+
+.mybroder{
+    border: 2px solid sienna;
+    text-align: center;
+}
+
+.colors {
+    background-color: aquamarine;
+}
